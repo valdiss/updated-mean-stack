@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mean-course-updated';
+  postList: any[] = [];
+
+  newPostEmitted(formValue: any) {
+    this.postList.push(formValue);
+  }
 }

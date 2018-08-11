@@ -1,0 +1,13 @@
+<form [formGroup]="postForm">
+  <mat-card>
+    <mat-form-field>
+      <input matInput formControlName="title" placeholder="Title">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput formControlName="message" placeholder="Enter your message here"></textarea>
+    </mat-form-field>
+    <div class="actions">
+      <button (click)="sendPost()" mat-flat-button>Save Post</button>
+    </div>
+  </mat-card>
+</form>
